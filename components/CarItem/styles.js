@@ -18,12 +18,26 @@ const styles = StyleSheet.create({
     fontSize: 16,
     color: "#5c5e62",
   },
+  subTitleCTA: {
+    color: 'black',
+    textDecorationStyle: "solid",
+    textDecorationLine: "underline"
+  },
   image: {
     width: "100%",
     height: "100%",
     resizeMode: "cover",
     position: "absolute",
   },
+  // buttonsContainer: {
+  //   marginTop: "auto",
+  //   marginBottom: 50,
+  // }
+  buttonsContainer: {
+    position: "absolute",
+    bottom: 50,
+    width: '100%',
+  }
 });
 
 export default styles;
