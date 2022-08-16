@@ -4,22 +4,18 @@ import styles from "./styles";
 import StyledButton from "../StyledButton";
 
 interface CarItemProps {
-  name: string;
-  tagLine: string;
-  image: string;
-  tagLineCTA: string;
+  car: { name: string, tagline: string, image: string, taglineCTA: string };
 }
 
 const CarItem = (props: CarItemProps) => {
-  const { name, tagLine, image, tagLineCTA } = props;
-
+  const { name, tagline, image, taglineCTA } = props.car;
   return (
     <View style={styles.carContainer}>
       <ImageBackground source={image} style={styles.image} />
       <View style={styles.titles}>
         <Text style={styles.title}>{name}</Text>
         <Text style={styles.subTitle}>
-          {tagLine} <Text style={styles.subTitleCTA}>{tagLineCTA}</Text>
+          {tagline} <Text style={styles.subTitleCTA}>{taglineCTA}</Text>
         </Text>
       </View>
       <View style={styles.buttonsContainer}>
